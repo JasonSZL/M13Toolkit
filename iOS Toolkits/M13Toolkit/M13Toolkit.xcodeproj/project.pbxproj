@@ -32,6 +32,8 @@
 		CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */; };
 		CAC34CAA1A83E1DA00E213B8 /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */; };
 		CAC34CAB1A83E1DA00E213B8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */; };
+		CAC34CB61A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CB41A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h */; };
+		CAC34CB71A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Merge.m"; path = "NSDictionary/NSDictionary+Merge.m"; sourceTree = "<group>"; };
 		CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Hash.h"; path = "NSString/NSString+Hash.h"; sourceTree = "<group>"; };
 		CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Hash.m"; path = "NSString/NSString+Hash.m"; sourceTree = "<group>"; };
+		CAC34CB41A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+FontSizeAdjustment.h"; path = "NSAttributedString/NSAttributedString+FontSizeAdjustment.h"; sourceTree = "<group>"; };
+		CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+FontSizeAdjustment.m"; path = "NSAttributedString/NSAttributedString+FontSizeAdjustment.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				CAC34CA71A83E15000E213B8 /* NSString */,
+				CAC34CB31A83FBB200E213B8 /* NSAttributedString */,
 				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
 				CA7DFEE71A83BE6000E9B16A /* NSArray */,
 			);
@@ -233,6 +238,15 @@
 			name = NSString;
 			sourceTree = "<group>";
 		};
+		CAC34CB31A83FBB200E213B8 /* NSAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				CAC34CB41A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h */,
+				CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */,
+			);
+			name = NSAttributedString;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -243,6 +257,7 @@
 				CA7DFE581A82BAB200E9B16A /* M13Toolkit.h in Headers */,
 				CA7DFEC41A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.h in Headers */,
 				CA7DFEFA1A83BE6000E9B16A /* NSArray+Map.h in Headers */,
+				CAC34CB61A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h in Headers */,
 				CA7DFEC81A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.h in Headers */,
 				CAC34CAA1A83E1DA00E213B8 /* NSString+Hash.h in Headers */,
 				CA7DFEF81A83BE6000E9B16A /* NSArray+CreateWithData.h in Headers */,
@@ -359,6 +374,7 @@
 				CA7DFEF51A83BE6000E9B16A /* NSArray+Changes.m in Sources */,
 				CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */,
 				CA7DFEFB1A83BE6000E9B16A /* NSArray+Map.m in Sources */,
+				CAC34CB71A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m in Sources */,
 				CA7DFEC91A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.m in Sources */,
 				CA7DFEFD1A83BE6000E9B16A /* NSArray+Numbers.m in Sources */,
 				CA7DFEF91A83BE6000E9B16A /* NSArray+CreateWithData.m in Sources */,

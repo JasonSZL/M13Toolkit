@@ -81,6 +81,8 @@ LICENSE
   #
 
   s.frameworks = "CoreGraphics"
+  s.ios.frameworks = "UIKit"
+  s.osx.frameworks = "AppKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
