@@ -26,6 +26,10 @@
 		CA7DFEFD1A83BE6000E9B16A /* NSArray+Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFEF11A83BE6000E9B16A /* NSArray+Numbers.m */; };
 		CA7DFEFE1A83BE6000E9B16A /* NSMutableArray+MoveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFEF21A83BE6000E9B16A /* NSMutableArray+MoveObject.h */; };
 		CA7DFEFF1A83BE6000E9B16A /* NSMutableArray+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFEF31A83BE6000E9B16A /* NSMutableArray+MoveObject.m */; };
+		CAC34C9D1A83D46300E213B8 /* NSDictionary+CreateWithData.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34C9B1A83D46300E213B8 /* NSDictionary+CreateWithData.h */; };
+		CAC34C9E1A83D46300E213B8 /* NSDictionary+CreateWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34C9C1A83D46300E213B8 /* NSDictionary+CreateWithData.m */; };
+		CAC34CA11A83D74100E213B8 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34C9F1A83D74100E213B8 /* NSDictionary+Merge.h */; };
+		CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		CA7DFEF11A83BE6000E9B16A /* NSArray+Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Numbers.m"; sourceTree = "<group>"; };
 		CA7DFEF21A83BE6000E9B16A /* NSMutableArray+MoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MoveObject.h"; sourceTree = "<group>"; };
 		CA7DFEF31A83BE6000E9B16A /* NSMutableArray+MoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MoveObject.m"; sourceTree = "<group>"; };
+		CAC34C9B1A83D46300E213B8 /* NSDictionary+CreateWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+CreateWithData.h"; path = "NSDictionary/NSDictionary+CreateWithData.h"; sourceTree = "<group>"; };
+		CAC34C9C1A83D46300E213B8 /* NSDictionary+CreateWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+CreateWithData.m"; path = "NSDictionary/NSDictionary+CreateWithData.m"; sourceTree = "<group>"; };
+		CAC34C9F1A83D74100E213B8 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Merge.h"; path = "NSDictionary/NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Merge.m"; path = "NSDictionary/NSDictionary+Merge.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +183,7 @@
 		CA7DFEE61A83BE6000E9B16A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
 				CA7DFEE71A83BE6000E9B16A /* NSArray */,
 			);
 			path = Foundation;
@@ -199,6 +208,17 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
+		CAC34C9A1A83D43500E213B8 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				CAC34C9B1A83D46300E213B8 /* NSDictionary+CreateWithData.h */,
+				CAC34C9C1A83D46300E213B8 /* NSDictionary+CreateWithData.m */,
+				CAC34C9F1A83D74100E213B8 /* NSDictionary+Merge.h */,
+				CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */,
+			);
+			name = NSDictionary;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -211,7 +231,9 @@
 				CA7DFEFA1A83BE6000E9B16A /* NSArray+Map.h in Headers */,
 				CA7DFEC81A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.h in Headers */,
 				CA7DFEF81A83BE6000E9B16A /* NSArray+CreateWithData.h in Headers */,
+				CAC34C9D1A83D46300E213B8 /* NSDictionary+CreateWithData.h in Headers */,
 				CA7DFEF61A83BE6000E9B16A /* NSArray+CountedSet.h in Headers */,
+				CAC34CA11A83D74100E213B8 /* NSDictionary+Merge.h in Headers */,
 				CA7DFEFC1A83BE6000E9B16A /* NSArray+Numbers.h in Headers */,
 				CA7DFEFE1A83BE6000E9B16A /* NSMutableArray+MoveObject.h in Headers */,
 				CA7DFEF41A83BE6000E9B16A /* NSArray+Changes.h in Headers */,
@@ -315,9 +337,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA7DFEF71A83BE6000E9B16A /* NSArray+CountedSet.m in Sources */,
+				CAC34C9E1A83D46300E213B8 /* NSDictionary+CreateWithData.m in Sources */,
 				CA7DFEFF1A83BE6000E9B16A /* NSMutableArray+MoveObject.m in Sources */,
 				CA7DFEC51A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.m in Sources */,
 				CA7DFEF51A83BE6000E9B16A /* NSArray+Changes.m in Sources */,
+				CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */,
 				CA7DFEFB1A83BE6000E9B16A /* NSArray+Map.m in Sources */,
 				CA7DFEC91A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.m in Sources */,
 				CA7DFEFD1A83BE6000E9B16A /* NSArray+Numbers.m in Sources */,
