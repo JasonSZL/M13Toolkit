@@ -32,5 +32,5 @@ FOUNDATION_EXPORT const unsigned char M13ToolkitVersionString[];
 #import <M13Toolkit/NSDictionary+Merge.h>
 
 //NSString
-#import <M13Toolkit/NSString+Hash.h>
+#import <M13Toolkit/NSString+Digests.h>
 

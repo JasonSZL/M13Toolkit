@@ -30,10 +30,12 @@
 		CAC34C9E1A83D46300E213B8 /* NSDictionary+CreateWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34C9C1A83D46300E213B8 /* NSDictionary+CreateWithData.m */; };
 		CAC34CA11A83D74100E213B8 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34C9F1A83D74100E213B8 /* NSDictionary+Merge.h */; };
 		CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */; };
-		CAC34CAA1A83E1DA00E213B8 /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */; };
-		CAC34CAB1A83E1DA00E213B8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */; };
+		CAC34CAA1A83E1DA00E213B8 /* NSString+Digests.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CA81A83E1DA00E213B8 /* NSString+Digests.h */; };
+		CAC34CAB1A83E1DA00E213B8 /* NSString+Digests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA91A83E1DA00E213B8 /* NSString+Digests.m */; };
 		CAC34CB61A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CB41A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h */; };
 		CAC34CB71A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */; };
+		CAC34CBF1A84065800E213B8 /* NSData+Digests.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CBD1A84065800E213B8 /* NSData+Digests.h */; };
+		CAC34CC01A84065800E213B8 /* NSData+Digests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CBE1A84065800E213B8 /* NSData+Digests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,10 +75,12 @@
 		CAC34C9C1A83D46300E213B8 /* NSDictionary+CreateWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+CreateWithData.m"; path = "NSDictionary/NSDictionary+CreateWithData.m"; sourceTree = "<group>"; };
 		CAC34C9F1A83D74100E213B8 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Merge.h"; path = "NSDictionary/NSDictionary+Merge.h"; sourceTree = "<group>"; };
 		CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Merge.m"; path = "NSDictionary/NSDictionary+Merge.m"; sourceTree = "<group>"; };
-		CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Hash.h"; path = "NSString/NSString+Hash.h"; sourceTree = "<group>"; };
-		CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Hash.m"; path = "NSString/NSString+Hash.m"; sourceTree = "<group>"; };
+		CAC34CA81A83E1DA00E213B8 /* NSString+Digests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Digests.h"; path = "NSString/NSString+Digests.h"; sourceTree = "<group>"; };
+		CAC34CA91A83E1DA00E213B8 /* NSString+Digests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Digests.m"; path = "NSString/NSString+Digests.m"; sourceTree = "<group>"; };
 		CAC34CB41A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+FontSizeAdjustment.h"; path = "NSAttributedString/NSAttributedString+FontSizeAdjustment.h"; sourceTree = "<group>"; };
 		CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+FontSizeAdjustment.m"; path = "NSAttributedString/NSAttributedString+FontSizeAdjustment.m"; sourceTree = "<group>"; };
+		CAC34CBD1A84065800E213B8 /* NSData+Digests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Digests.h"; path = "NSData/NSData+Digests.h"; sourceTree = "<group>"; };
+		CAC34CBE1A84065800E213B8 /* NSData+Digests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Digests.m"; path = "NSData/NSData+Digests.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,8 +237,8 @@
 		CAC34CA71A83E15000E213B8 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */,
-				CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */,
+				CAC34CA81A83E1DA00E213B8 /* NSString+Digests.h */,
+				CAC34CA91A83E1DA00E213B8 /* NSString+Digests.m */,
 			);
 			name = NSString;
 			sourceTree = "<group>";
@@ -251,6 +255,8 @@
 		CAC34CB81A8401AF00E213B8 /* NSData */ = {
 			isa = PBXGroup;
 			children = (
+				CAC34CBD1A84065800E213B8 /* NSData+Digests.h */,
+				CAC34CBE1A84065800E213B8 /* NSData+Digests.m */,
 			);
 			name = NSData;
 			sourceTree = "<group>";
@@ -267,7 +273,8 @@
 				CA7DFEFA1A83BE6000E9B16A /* NSArray+Map.h in Headers */,
 				CAC34CB61A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.h in Headers */,
 				CA7DFEC81A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.h in Headers */,
-				CAC34CAA1A83E1DA00E213B8 /* NSString+Hash.h in Headers */,
+				CAC34CBF1A84065800E213B8 /* NSData+Digests.h in Headers */,
+				CAC34CAA1A83E1DA00E213B8 /* NSString+Digests.h in Headers */,
 				CA7DFEF81A83BE6000E9B16A /* NSArray+CreateWithData.h in Headers */,
 				CAC34C9D1A83D46300E213B8 /* NSDictionary+CreateWithData.h in Headers */,
 				CA7DFEF61A83BE6000E9B16A /* NSArray+CountedSet.h in Headers */,
@@ -377,7 +384,7 @@
 				CA7DFEF71A83BE6000E9B16A /* NSArray+CountedSet.m in Sources */,
 				CAC34C9E1A83D46300E213B8 /* NSDictionary+CreateWithData.m in Sources */,
 				CA7DFEFF1A83BE6000E9B16A /* NSMutableArray+MoveObject.m in Sources */,
-				CAC34CAB1A83E1DA00E213B8 /* NSString+Hash.m in Sources */,
+				CAC34CAB1A83E1DA00E213B8 /* NSString+Digests.m in Sources */,
 				CA7DFEC51A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.m in Sources */,
 				CA7DFEF51A83BE6000E9B16A /* NSArray+Changes.m in Sources */,
 				CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */,
@@ -386,6 +393,7 @@
 				CA7DFEC91A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.m in Sources */,
 				CA7DFEFD1A83BE6000E9B16A /* NSArray+Numbers.m in Sources */,
 				CA7DFEF91A83BE6000E9B16A /* NSArray+CreateWithData.m in Sources */,
+				CAC34CC01A84065800E213B8 /* NSData+Digests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,14 +12,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Hash)
+@interface NSString (Digests)
 
 /**
- Create a hash of the string using MD5.
+ Creates the MD5 checksum of the object.
  
- @return The MD5 hash of the string.
+ @return The MD5 checksum of the object.
  */
-- (NSString *)MD5Hash;
+- (NSString *)MD5Sum;
 
 /**
  Create a hash of the string using SHA1.

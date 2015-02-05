@@ -80,7 +80,7 @@ LICENSE
   #  the lib prefix of their name.
   #
 
-  s.frameworks = "CoreGraphics"
+  s.frameworks = "CoreGraphics, CommonCrypto"
   s.ios.frameworks = "UIKit"
   s.osx.frameworks = "AppKit"
 
