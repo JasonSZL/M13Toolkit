@@ -191,6 +191,7 @@
 		CA7DFEE61A83BE6000E9B16A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CAC34CB81A8401AF00E213B8 /* NSData */,
 				CAC34CA71A83E15000E213B8 /* NSString */,
 				CAC34CB31A83FBB200E213B8 /* NSAttributedString */,
 				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
@@ -245,6 +246,13 @@
 				CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */,
 			);
 			name = NSAttributedString;
+			sourceTree = "<group>";
+		};
+		CAC34CB81A8401AF00E213B8 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NSData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
