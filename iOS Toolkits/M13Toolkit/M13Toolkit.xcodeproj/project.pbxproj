@@ -30,6 +30,8 @@
 		CAC34C9E1A83D46300E213B8 /* NSDictionary+CreateWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34C9C1A83D46300E213B8 /* NSDictionary+CreateWithData.m */; };
 		CAC34CA11A83D74100E213B8 /* NSDictionary+Merge.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34C9F1A83D74100E213B8 /* NSDictionary+Merge.h */; };
 		CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */; };
+		CAC34CAA1A83E1DA00E213B8 /* NSString+Hash.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */; };
+		CAC34CAB1A83E1DA00E213B8 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		CAC34C9C1A83D46300E213B8 /* NSDictionary+CreateWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+CreateWithData.m"; path = "NSDictionary/NSDictionary+CreateWithData.m"; sourceTree = "<group>"; };
 		CAC34C9F1A83D74100E213B8 /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Merge.h"; path = "NSDictionary/NSDictionary+Merge.h"; sourceTree = "<group>"; };
 		CAC34CA01A83D74100E213B8 /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Merge.m"; path = "NSDictionary/NSDictionary+Merge.m"; sourceTree = "<group>"; };
+		CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Hash.h"; path = "NSString/NSString+Hash.h"; sourceTree = "<group>"; };
+		CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Hash.m"; path = "NSString/NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 		CA7DFEE61A83BE6000E9B16A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				CAC34CA71A83E15000E213B8 /* NSString */,
 				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
 				CA7DFEE71A83BE6000E9B16A /* NSArray */,
 			);
@@ -219,6 +224,15 @@
 			name = NSDictionary;
 			sourceTree = "<group>";
 		};
+		CAC34CA71A83E15000E213B8 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				CAC34CA81A83E1DA00E213B8 /* NSString+Hash.h */,
+				CAC34CA91A83E1DA00E213B8 /* NSString+Hash.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -230,6 +244,7 @@
 				CA7DFEC41A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.h in Headers */,
 				CA7DFEFA1A83BE6000E9B16A /* NSArray+Map.h in Headers */,
 				CA7DFEC81A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.h in Headers */,
+				CAC34CAA1A83E1DA00E213B8 /* NSString+Hash.h in Headers */,
 				CA7DFEF81A83BE6000E9B16A /* NSArray+CreateWithData.h in Headers */,
 				CAC34C9D1A83D46300E213B8 /* NSDictionary+CreateWithData.h in Headers */,
 				CA7DFEF61A83BE6000E9B16A /* NSArray+CountedSet.h in Headers */,
@@ -339,6 +354,7 @@
 				CA7DFEF71A83BE6000E9B16A /* NSArray+CountedSet.m in Sources */,
 				CAC34C9E1A83D46300E213B8 /* NSDictionary+CreateWithData.m in Sources */,
 				CA7DFEFF1A83BE6000E9B16A /* NSMutableArray+MoveObject.m in Sources */,
+				CAC34CAB1A83E1DA00E213B8 /* NSString+Hash.m in Sources */,
 				CA7DFEC51A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.m in Sources */,
 				CA7DFEF51A83BE6000E9B16A /* NSArray+Changes.m in Sources */,
 				CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */,

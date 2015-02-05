@@ -10,18 +10,8 @@
 		CA7DFE7E1A82BAD900E9B16A /* M13Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFE7D1A82BAD900E9B16A /* M13Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA7DFE841A82BAD900E9B16A /* M13Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7DFE781A82BAD900E9B16A /* M13Toolkit.framework */; };
 		CA7DFE8B1A82BAD900E9B16A /* M13ToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFE8A1A82BAD900E9B16A /* M13ToolkitTests.m */; };
-		CA7DFF101A83BE8B00E9B16A /* NSArray+Changes.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFF041A83BE8B00E9B16A /* NSArray+Changes.h */; };
-		CA7DFF111A83BE8B00E9B16A /* NSArray+Changes.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFF051A83BE8B00E9B16A /* NSArray+Changes.m */; };
-		CA7DFF121A83BE8B00E9B16A /* NSArray+CountedSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFF061A83BE8B00E9B16A /* NSArray+CountedSet.h */; };
-		CA7DFF131A83BE8B00E9B16A /* NSArray+CountedSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFF071A83BE8B00E9B16A /* NSArray+CountedSet.m */; };
-		CA7DFF141A83BE8B00E9B16A /* NSArray+CreateWithData.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFF081A83BE8B00E9B16A /* NSArray+CreateWithData.h */; };
-		CA7DFF151A83BE8B00E9B16A /* NSArray+CreateWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFF091A83BE8B00E9B16A /* NSArray+CreateWithData.m */; };
-		CA7DFF161A83BE8B00E9B16A /* NSArray+Map.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFF0A1A83BE8B00E9B16A /* NSArray+Map.h */; };
-		CA7DFF171A83BE8B00E9B16A /* NSArray+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFF0B1A83BE8B00E9B16A /* NSArray+Map.m */; };
-		CA7DFF181A83BE8B00E9B16A /* NSArray+Numbers.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFF0C1A83BE8B00E9B16A /* NSArray+Numbers.h */; };
-		CA7DFF191A83BE8B00E9B16A /* NSArray+Numbers.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFF0D1A83BE8B00E9B16A /* NSArray+Numbers.m */; };
-		CA7DFF1A1A83BE8B00E9B16A /* NSMutableArray+MoveObject.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFF0E1A83BE8B00E9B16A /* NSMutableArray+MoveObject.h */; };
-		CA7DFF1B1A83BE8B00E9B16A /* NSMutableArray+MoveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFF0F1A83BE8B00E9B16A /* NSMutableArray+MoveObject.m */; };
+		CAC34CAD1A83E1F500E213B8 /* Common Classes in Resources */ = {isa = PBXBuildFile; fileRef = CAC34CAC1A83E1F500E213B8 /* Common Classes */; };
+		CAC34CAE1A83E1FB00E213B8 /* Common Classes in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CAC1A83E1F500E213B8 /* Common Classes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,18 +31,7 @@
 		CA7DFE831A82BAD900E9B16A /* M13ToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M13ToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFE891A82BAD900E9B16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7DFE8A1A82BAD900E9B16A /* M13ToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M13ToolkitTests.m; sourceTree = "<group>"; };
-		CA7DFF041A83BE8B00E9B16A /* NSArray+Changes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Changes.h"; sourceTree = "<group>"; };
-		CA7DFF051A83BE8B00E9B16A /* NSArray+Changes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Changes.m"; sourceTree = "<group>"; };
-		CA7DFF061A83BE8B00E9B16A /* NSArray+CountedSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CountedSet.h"; sourceTree = "<group>"; };
-		CA7DFF071A83BE8B00E9B16A /* NSArray+CountedSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CountedSet.m"; sourceTree = "<group>"; };
-		CA7DFF081A83BE8B00E9B16A /* NSArray+CreateWithData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CreateWithData.h"; sourceTree = "<group>"; };
-		CA7DFF091A83BE8B00E9B16A /* NSArray+CreateWithData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CreateWithData.m"; sourceTree = "<group>"; };
-		CA7DFF0A1A83BE8B00E9B16A /* NSArray+Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Map.h"; sourceTree = "<group>"; };
-		CA7DFF0B1A83BE8B00E9B16A /* NSArray+Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Map.m"; sourceTree = "<group>"; };
-		CA7DFF0C1A83BE8B00E9B16A /* NSArray+Numbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Numbers.h"; sourceTree = "<group>"; };
-		CA7DFF0D1A83BE8B00E9B16A /* NSArray+Numbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Numbers.m"; sourceTree = "<group>"; };
-		CA7DFF0E1A83BE8B00E9B16A /* NSMutableArray+MoveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MoveObject.h"; sourceTree = "<group>"; };
-		CA7DFF0F1A83BE8B00E9B16A /* NSMutableArray+MoveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MoveObject.m"; sourceTree = "<group>"; };
+		CAC34CAC1A83E1F500E213B8 /* Common Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Common Classes"; path = "../../Common Classes"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +56,7 @@
 		CA7DFE6E1A82BAD900E9B16A = {
 			isa = PBXGroup;
 			children = (
-				CA7DFF011A83BE8B00E9B16A /* Common Classes */,
+				CAC34CAC1A83E1F500E213B8 /* Common Classes */,
 				CA7DFE7A1A82BAD900E9B16A /* M13Toolkit */,
 				CA7DFE871A82BAD900E9B16A /* M13ToolkitTests */,
 				CA7DFE791A82BAD900E9B16A /* Products */,
@@ -127,42 +106,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CA7DFF011A83BE8B00E9B16A /* Common Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CA7DFF021A83BE8B00E9B16A /* Foundation */,
-			);
-			name = "Common Classes";
-			path = "../../Common Classes";
-			sourceTree = "<group>";
-		};
-		CA7DFF021A83BE8B00E9B16A /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				CA7DFF031A83BE8B00E9B16A /* NSArray */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		CA7DFF031A83BE8B00E9B16A /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				CA7DFF041A83BE8B00E9B16A /* NSArray+Changes.h */,
-				CA7DFF051A83BE8B00E9B16A /* NSArray+Changes.m */,
-				CA7DFF061A83BE8B00E9B16A /* NSArray+CountedSet.h */,
-				CA7DFF071A83BE8B00E9B16A /* NSArray+CountedSet.m */,
-				CA7DFF081A83BE8B00E9B16A /* NSArray+CreateWithData.h */,
-				CA7DFF091A83BE8B00E9B16A /* NSArray+CreateWithData.m */,
-				CA7DFF0A1A83BE8B00E9B16A /* NSArray+Map.h */,
-				CA7DFF0B1A83BE8B00E9B16A /* NSArray+Map.m */,
-				CA7DFF0C1A83BE8B00E9B16A /* NSArray+Numbers.h */,
-				CA7DFF0D1A83BE8B00E9B16A /* NSArray+Numbers.m */,
-				CA7DFF0E1A83BE8B00E9B16A /* NSMutableArray+MoveObject.h */,
-				CA7DFF0F1A83BE8B00E9B16A /* NSMutableArray+MoveObject.m */,
-			);
-			path = NSArray;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -170,13 +113,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7DFF161A83BE8B00E9B16A /* NSArray+Map.h in Headers */,
 				CA7DFE7E1A82BAD900E9B16A /* M13Toolkit.h in Headers */,
-				CA7DFF181A83BE8B00E9B16A /* NSArray+Numbers.h in Headers */,
-				CA7DFF101A83BE8B00E9B16A /* NSArray+Changes.h in Headers */,
-				CA7DFF121A83BE8B00E9B16A /* NSArray+CountedSet.h in Headers */,
-				CA7DFF141A83BE8B00E9B16A /* NSArray+CreateWithData.h in Headers */,
-				CA7DFF1A1A83BE8B00E9B16A /* NSMutableArray+MoveObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC34CAD1A83E1F500E213B8 /* Common Classes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA7DFF131A83BE8B00E9B16A /* NSArray+CountedSet.m in Sources */,
-				CA7DFF1B1A83BE8B00E9B16A /* NSMutableArray+MoveObject.m in Sources */,
-				CA7DFF171A83BE8B00E9B16A /* NSArray+Map.m in Sources */,
-				CA7DFF191A83BE8B00E9B16A /* NSArray+Numbers.m in Sources */,
-				CA7DFF151A83BE8B00E9B16A /* NSArray+CreateWithData.m in Sources */,
-				CA7DFF111A83BE8B00E9B16A /* NSArray+Changes.m in Sources */,
+				CAC34CAE1A83E1FB00E213B8 /* Common Classes in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
