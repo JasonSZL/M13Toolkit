@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:iOS Toolkits/M13Toolkit/M13Toolkit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:OS X Toolkits/M13Toolkit/M13Toolkit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:M13Toolkit.podspec">
+   </FileRef>
+</Workspace>
