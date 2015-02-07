@@ -27,10 +27,17 @@ FOUNDATION_EXPORT const unsigned char M13ToolkitVersionString[];
 //NSAttributedString
 #import <M13Toolkit/FontSizeAdjustment.h>
 
+//NSData
+#import <M13Toolkit/NSData+Digests.h>
+
 //NSDictionary
 #import <M13Toolkit/NSDictionary+CreateWithData.h>
 #import <M13Toolkit/NSDictionary+Merge.h>
 
+//NSLocale
+#import <M13Toolkit/NSLocale+List>
+
 //NSString
 #import <M13Toolkit/NSString+Digests.h>
+#import <M13Toolkit/NSString+Formatting.h>
 

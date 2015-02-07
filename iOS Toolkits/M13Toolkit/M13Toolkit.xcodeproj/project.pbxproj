@@ -36,6 +36,10 @@
 		CAC34CB71A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */; };
 		CAC34CBF1A84065800E213B8 /* NSData+Digests.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CBD1A84065800E213B8 /* NSData+Digests.h */; };
 		CAC34CC01A84065800E213B8 /* NSData+Digests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CBE1A84065800E213B8 /* NSData+Digests.m */; };
+		CAC34CC91A840D6700E213B8 /* NSLocale+List.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CC71A840D6700E213B8 /* NSLocale+List.h */; };
+		CAC34CCA1A840D6700E213B8 /* NSLocale+List.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CC81A840D6700E213B8 /* NSLocale+List.m */; };
+		CAC34CCD1A85B22800E213B8 /* NSString+Formatting.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC34CCB1A85B22800E213B8 /* NSString+Formatting.h */; };
+		CAC34CCE1A85B22800E213B8 /* NSString+Formatting.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CCC1A85B22800E213B8 /* NSString+Formatting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,10 @@
 		CAC34CB51A83FC6B00E213B8 /* NSAttributedString+FontSizeAdjustment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSAttributedString+FontSizeAdjustment.m"; path = "NSAttributedString/NSAttributedString+FontSizeAdjustment.m"; sourceTree = "<group>"; };
 		CAC34CBD1A84065800E213B8 /* NSData+Digests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Digests.h"; path = "NSData/NSData+Digests.h"; sourceTree = "<group>"; };
 		CAC34CBE1A84065800E213B8 /* NSData+Digests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Digests.m"; path = "NSData/NSData+Digests.m"; sourceTree = "<group>"; };
+		CAC34CC71A840D6700E213B8 /* NSLocale+List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLocale+List.h"; path = "NSLocale/NSLocale+List.h"; sourceTree = "<group>"; };
+		CAC34CC81A840D6700E213B8 /* NSLocale+List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLocale+List.m"; path = "NSLocale/NSLocale+List.m"; sourceTree = "<group>"; };
+		CAC34CCB1A85B22800E213B8 /* NSString+Formatting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Formatting.h"; path = "NSString/NSString+Formatting.h"; sourceTree = "<group>"; };
+		CAC34CCC1A85B22800E213B8 /* NSString+Formatting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Formatting.m"; path = "NSString/NSString+Formatting.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,11 +203,12 @@
 		CA7DFEE61A83BE6000E9B16A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				CAC34CB81A8401AF00E213B8 /* NSData */,
-				CAC34CA71A83E15000E213B8 /* NSString */,
-				CAC34CB31A83FBB200E213B8 /* NSAttributedString */,
-				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
 				CA7DFEE71A83BE6000E9B16A /* NSArray */,
+				CAC34CB31A83FBB200E213B8 /* NSAttributedString */,
+				CAC34CB81A8401AF00E213B8 /* NSData */,
+				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
+				CAC34CC61A840CF100E213B8 /* NSLocale */,
+				CAC34CA71A83E15000E213B8 /* NSString */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -239,6 +248,8 @@
 			children = (
 				CAC34CA81A83E1DA00E213B8 /* NSString+Digests.h */,
 				CAC34CA91A83E1DA00E213B8 /* NSString+Digests.m */,
+				CAC34CCB1A85B22800E213B8 /* NSString+Formatting.h */,
+				CAC34CCC1A85B22800E213B8 /* NSString+Formatting.m */,
 			);
 			name = NSString;
 			sourceTree = "<group>";
@@ -261,6 +272,15 @@
 			name = NSData;
 			sourceTree = "<group>";
 		};
+		CAC34CC61A840CF100E213B8 /* NSLocale */ = {
+			isa = PBXGroup;
+			children = (
+				CAC34CC71A840D6700E213B8 /* NSLocale+List.h */,
+				CAC34CC81A840D6700E213B8 /* NSLocale+List.m */,
+			);
+			name = NSLocale;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -277,7 +297,9 @@
 				CAC34CAA1A83E1DA00E213B8 /* NSString+Digests.h in Headers */,
 				CA7DFEF81A83BE6000E9B16A /* NSArray+CreateWithData.h in Headers */,
 				CAC34C9D1A83D46300E213B8 /* NSDictionary+CreateWithData.h in Headers */,
+				CAC34CCD1A85B22800E213B8 /* NSString+Formatting.h in Headers */,
 				CA7DFEF61A83BE6000E9B16A /* NSArray+CountedSet.h in Headers */,
+				CAC34CC91A840D6700E213B8 /* NSLocale+List.h in Headers */,
 				CAC34CA11A83D74100E213B8 /* NSDictionary+Merge.h in Headers */,
 				CA7DFEFC1A83BE6000E9B16A /* NSArray+Numbers.h in Headers */,
 				CA7DFEFE1A83BE6000E9B16A /* NSMutableArray+MoveObject.h in Headers */,
@@ -385,6 +407,7 @@
 				CAC34C9E1A83D46300E213B8 /* NSDictionary+CreateWithData.m in Sources */,
 				CA7DFEFF1A83BE6000E9B16A /* NSMutableArray+MoveObject.m in Sources */,
 				CAC34CAB1A83E1DA00E213B8 /* NSString+Digests.m in Sources */,
+				CAC34CCE1A85B22800E213B8 /* NSString+Formatting.m in Sources */,
 				CA7DFEC51A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.m in Sources */,
 				CA7DFEF51A83BE6000E9B16A /* NSArray+Changes.m in Sources */,
 				CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */,
@@ -393,6 +416,7 @@
 				CA7DFEC91A83BD5A00E9B16A /* UITableView+AutoBatchUpdates.m in Sources */,
 				CA7DFEFD1A83BE6000E9B16A /* NSArray+Numbers.m in Sources */,
 				CA7DFEF91A83BE6000E9B16A /* NSArray+CreateWithData.m in Sources */,
+				CAC34CCA1A840D6700E213B8 /* NSLocale+List.m in Sources */,
 				CAC34CC01A84065800E213B8 /* NSData+Digests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
