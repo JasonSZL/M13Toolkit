@@ -37,6 +37,7 @@ FOUNDATION_EXPORT const unsigned char M13ToolkitVersionString[];
 
 //NSFileManager
 #import <M13Toolkit/NSFileManager+Paths.h>
+#import <M13Toolkit/NSFileManager+Attributes.h>
 
 //NSLocale
 #import <M13Toolkit/NSLocale+List>
