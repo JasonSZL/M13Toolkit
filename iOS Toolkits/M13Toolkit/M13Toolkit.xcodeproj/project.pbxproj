@@ -13,6 +13,8 @@
 		CA5B439A1A87FBA200340DCB /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B43981A87FBA200340DCB /* NSFileManager+Paths.m */; };
 		CA5B439D1A88038700340DCB /* NSFileManager+Attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5B439B1A88038700340DCB /* NSFileManager+Attributes.h */; };
 		CA5B439E1A88038700340DCB /* NSFileManager+Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B439C1A88038700340DCB /* NSFileManager+Attributes.m */; };
+		CA5B43A21A88096F00340DCB /* NSObject+PropertyList.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5B43A01A88096F00340DCB /* NSObject+PropertyList.h */; };
+		CA5B43A31A88096F00340DCB /* NSObject+PropertyList.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B43A11A88096F00340DCB /* NSObject+PropertyList.m */; };
 		CA7DFE581A82BAB200E9B16A /* M13Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFE571A82BAB200E9B16A /* M13Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA7DFE5E1A82BAB300E9B16A /* M13Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7DFE521A82BAB200E9B16A /* M13Toolkit.framework */; };
 		CA7DFE651A82BAB300E9B16A /* M13ToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFE641A82BAB300E9B16A /* M13ToolkitTests.m */; };
@@ -65,6 +67,8 @@
 		CA5B43981A87FBA200340DCB /* NSFileManager+Paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Paths.m"; path = "NSFileManager/NSFileManager+Paths.m"; sourceTree = "<group>"; };
 		CA5B439B1A88038700340DCB /* NSFileManager+Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Attributes.h"; path = "NSFileManager/NSFileManager+Attributes.h"; sourceTree = "<group>"; };
 		CA5B439C1A88038700340DCB /* NSFileManager+Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Attributes.m"; path = "NSFileManager/NSFileManager+Attributes.m"; sourceTree = "<group>"; };
+		CA5B43A01A88096F00340DCB /* NSObject+PropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+PropertyList.h"; path = "NSObject/NSObject+PropertyList.h"; sourceTree = "<group>"; };
+		CA5B43A11A88096F00340DCB /* NSObject+PropertyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+PropertyList.m"; path = "NSObject/NSObject+PropertyList.m"; sourceTree = "<group>"; };
 		CA7DFE521A82BAB200E9B16A /* M13Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = M13Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFE561A82BAB200E9B16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7DFE571A82BAB200E9B16A /* M13Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M13Toolkit.h; sourceTree = "<group>"; };
@@ -131,6 +135,15 @@
 				CA5B439C1A88038700340DCB /* NSFileManager+Attributes.m */,
 			);
 			name = NSFileManager;
+			sourceTree = "<group>";
+		};
+		CA5B439F1A88092400340DCB /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				CA5B43A01A88096F00340DCB /* NSObject+PropertyList.h */,
+				CA5B43A11A88096F00340DCB /* NSObject+PropertyList.m */,
+			);
+			name = NSObject;
 			sourceTree = "<group>";
 		};
 		CA7DFE481A82BAB200E9B16A = {
@@ -232,6 +245,7 @@
 				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
 				CA5B43921A87FB0C00340DCB /* NSFileManager */,
 				CAC34CC61A840CF100E213B8 /* NSLocale */,
+				CA5B439F1A88092400340DCB /* NSObject */,
 				CAC34CA71A83E15000E213B8 /* NSString */,
 			);
 			path = Foundation;
@@ -323,6 +337,7 @@
 				CAC34CBF1A84065800E213B8 /* NSData+Digests.h in Headers */,
 				CAC34CAA1A83E1DA00E213B8 /* NSString+Digests.h in Headers */,
 				CA7DFEF81A83BE6000E9B16A /* NSArray+CreateWithData.h in Headers */,
+				CA5B43A21A88096F00340DCB /* NSObject+PropertyList.h in Headers */,
 				CAC34C9D1A83D46300E213B8 /* NSDictionary+CreateWithData.h in Headers */,
 				CAC34CCD1A85B22800E213B8 /* NSString+Formatting.h in Headers */,
 				CA7DFEF61A83BE6000E9B16A /* NSArray+CountedSet.h in Headers */,
@@ -439,6 +454,7 @@
 				CAC34CAB1A83E1DA00E213B8 /* NSString+Digests.m in Sources */,
 				CAC34CCE1A85B22800E213B8 /* NSString+Formatting.m in Sources */,
 				CA7DFEC51A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.m in Sources */,
+				CA5B43A31A88096F00340DCB /* NSObject+PropertyList.m in Sources */,
 				CA5B43911A87F6D100340DCB /* NSData+Encrypt.m in Sources */,
 				CA7DFEF51A83BE6000E9B16A /* NSArray+Changes.m in Sources */,
 				CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */,
