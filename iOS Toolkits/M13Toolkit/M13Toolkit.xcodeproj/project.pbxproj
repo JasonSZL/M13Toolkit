@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CA5B43901A87F6D100340DCB /* NSData+Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5B438E1A87F6D100340DCB /* NSData+Encrypt.h */; };
 		CA5B43911A87F6D100340DCB /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B438F1A87F6D100340DCB /* NSData+Encrypt.m */; };
+		CA5B43991A87FBA200340DCB /* NSFileManager+Paths.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5B43971A87FBA200340DCB /* NSFileManager+Paths.h */; };
+		CA5B439A1A87FBA200340DCB /* NSFileManager+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B43981A87FBA200340DCB /* NSFileManager+Paths.m */; };
 		CA7DFE581A82BAB200E9B16A /* M13Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFE571A82BAB200E9B16A /* M13Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA7DFE5E1A82BAB300E9B16A /* M13Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7DFE521A82BAB200E9B16A /* M13Toolkit.framework */; };
 		CA7DFE651A82BAB300E9B16A /* M13ToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFE641A82BAB300E9B16A /* M13ToolkitTests.m */; };
@@ -57,6 +59,8 @@
 /* Begin PBXFileReference section */
 		CA5B438E1A87F6D100340DCB /* NSData+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Encrypt.h"; path = "NSData/NSData+Encrypt.h"; sourceTree = "<group>"; };
 		CA5B438F1A87F6D100340DCB /* NSData+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Encrypt.m"; path = "NSData/NSData+Encrypt.m"; sourceTree = "<group>"; };
+		CA5B43971A87FBA200340DCB /* NSFileManager+Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+Paths.h"; path = "NSFileManager/NSFileManager+Paths.h"; sourceTree = "<group>"; };
+		CA5B43981A87FBA200340DCB /* NSFileManager+Paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+Paths.m"; path = "NSFileManager/NSFileManager+Paths.m"; sourceTree = "<group>"; };
 		CA7DFE521A82BAB200E9B16A /* M13Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = M13Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFE561A82BAB200E9B16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7DFE571A82BAB200E9B16A /* M13Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M13Toolkit.h; sourceTree = "<group>"; };
@@ -114,6 +118,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA5B43921A87FB0C00340DCB /* NSFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA5B43971A87FBA200340DCB /* NSFileManager+Paths.h */,
+				CA5B43981A87FBA200340DCB /* NSFileManager+Paths.m */,
+			);
+			name = NSFileManager;
+			sourceTree = "<group>";
+		};
 		CA7DFE481A82BAB200E9B16A = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +224,7 @@
 				CAC34CB31A83FBB200E213B8 /* NSAttributedString */,
 				CAC34CB81A8401AF00E213B8 /* NSData */,
 				CAC34C9A1A83D43500E213B8 /* NSDictionary */,
+				CA5B43921A87FB0C00340DCB /* NSFileManager */,
 				CAC34CC61A840CF100E213B8 /* NSLocale */,
 				CAC34CA71A83E15000E213B8 /* NSString */,
 			);
@@ -308,6 +322,7 @@
 				CA7DFEF61A83BE6000E9B16A /* NSArray+CountedSet.h in Headers */,
 				CAC34CC91A840D6700E213B8 /* NSLocale+List.h in Headers */,
 				CAC34CA11A83D74100E213B8 /* NSDictionary+Merge.h in Headers */,
+				CA5B43991A87FBA200340DCB /* NSFileManager+Paths.h in Headers */,
 				CA7DFEFC1A83BE6000E9B16A /* NSArray+Numbers.h in Headers */,
 				CA7DFEFE1A83BE6000E9B16A /* NSMutableArray+MoveObject.h in Headers */,
 				CA7DFEF41A83BE6000E9B16A /* NSArray+Changes.h in Headers */,
@@ -426,6 +441,7 @@
 				CA7DFEF91A83BE6000E9B16A /* NSArray+CreateWithData.m in Sources */,
 				CAC34CCA1A840D6700E213B8 /* NSLocale+List.m in Sources */,
 				CAC34CC01A84065800E213B8 /* NSData+Digests.m in Sources */,
+				CA5B439A1A87FBA200340DCB /* NSFileManager+Paths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
