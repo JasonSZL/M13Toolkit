@@ -14,7 +14,7 @@
 
 @interface NSFileManager (Paths)
 
-/**@name Directories and Paths*/
+/**@name Directory Path Generation*/
 
 /**
 Get the path to the application support directory.
@@ -95,5 +95,14 @@ Get the path to the application support directory.
  @return The path to the subpath in the temporary directory.
  */
 - (NSString *)temporaryFileDirectorySubpathByAppendingPath:(NSString *)subpath;
+
+/**@name File Path Generation*/
+
+/**
+ Generates a path to a unique temporary file in the temporary directory.
+ 
+ @return A path to a unique file.
+ */
+- (NSString *)uniqueTemporaryFilePath;
 
 @end

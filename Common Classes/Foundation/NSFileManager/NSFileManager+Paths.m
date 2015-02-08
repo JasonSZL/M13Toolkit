@@ -54,4 +54,9 @@
     return [[self temporaryFileDirectory] stringByAppendingPathComponent:subpath];
 }
 
+- (NSString *)uniqueTemporaryFilePath
+{
+    return [[self temporaryFileDirectory] stringByAppendingPathComponent:[[NSUUID UUID] UUIDString]];
+}
+
 @end
