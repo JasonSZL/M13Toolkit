@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA5B43901A87F6D100340DCB /* NSData+Encrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = CA5B438E1A87F6D100340DCB /* NSData+Encrypt.h */; };
+		CA5B43911A87F6D100340DCB /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B438F1A87F6D100340DCB /* NSData+Encrypt.m */; };
 		CA7DFE581A82BAB200E9B16A /* M13Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFE571A82BAB200E9B16A /* M13Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA7DFE5E1A82BAB300E9B16A /* M13Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7DFE521A82BAB200E9B16A /* M13Toolkit.framework */; };
 		CA7DFE651A82BAB300E9B16A /* M13ToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFE641A82BAB300E9B16A /* M13ToolkitTests.m */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA5B438E1A87F6D100340DCB /* NSData+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Encrypt.h"; path = "NSData/NSData+Encrypt.h"; sourceTree = "<group>"; };
+		CA5B438F1A87F6D100340DCB /* NSData+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Encrypt.m"; path = "NSData/NSData+Encrypt.m"; sourceTree = "<group>"; };
 		CA7DFE521A82BAB200E9B16A /* M13Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = M13Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFE561A82BAB200E9B16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7DFE571A82BAB200E9B16A /* M13Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M13Toolkit.h; sourceTree = "<group>"; };
@@ -268,6 +272,8 @@
 			children = (
 				CAC34CBD1A84065800E213B8 /* NSData+Digests.h */,
 				CAC34CBE1A84065800E213B8 /* NSData+Digests.m */,
+				CA5B438E1A87F6D100340DCB /* NSData+Encrypt.h */,
+				CA5B438F1A87F6D100340DCB /* NSData+Encrypt.m */,
 			);
 			name = NSData;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5B43901A87F6D100340DCB /* NSData+Encrypt.h in Headers */,
 				CA7DFE581A82BAB200E9B16A /* M13Toolkit.h in Headers */,
 				CA7DFEC41A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.h in Headers */,
 				CA7DFEFA1A83BE6000E9B16A /* NSArray+Map.h in Headers */,
@@ -409,6 +416,7 @@
 				CAC34CAB1A83E1DA00E213B8 /* NSString+Digests.m in Sources */,
 				CAC34CCE1A85B22800E213B8 /* NSString+Formatting.m in Sources */,
 				CA7DFEC51A83BD4900E9B16A /* UICollectionView+AutoBatchUpdates.m in Sources */,
+				CA5B43911A87F6D100340DCB /* NSData+Encrypt.m in Sources */,
 				CA7DFEF51A83BE6000E9B16A /* NSArray+Changes.m in Sources */,
 				CAC34CA21A83D74100E213B8 /* NSDictionary+Merge.m in Sources */,
 				CA7DFEFB1A83BE6000E9B16A /* NSArray+Map.m in Sources */,
