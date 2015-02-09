@@ -13,6 +13,38 @@ NSArray:
 * **Numbers:** Create an array of NSIntegers, CGFloats, or doubles using a range, delta, and/or function block.
 * **Move Object:** Adds a move object function to NSMutableArray.
 
+NSAttributedString:
+----------------
+* **Adjustment:** Adjusts the font size of the attributed string, increasing or decreasing it by a given amount.
+
+NSData:
+------------
+* **Digests:** Create hashes and checksums from data.
+* **Encrypt:** Encrypt and decrypt data using a password.
+
+NSDictionary:
+--------------
+* **Create With Data:** Create NSDictionary with an NSData object that is a plist.
+* **Merge:** Merge two dictionaries.
+
+NSFileManager:
+-------------
+* **Paths:** Easily generate paths for common folders and temporary files.
+* **Attributes:** Get attributes for files easily.
+
+NSLocale:
+-----------
+* **List:** Generates a human readable list of countries.
+
+NSObject:
+---------
+* **Property List:** Generate a list of keys for an object's properties. Also can create a NSDictionary version of an object with its keys and values.
+
+NSString:
+-----------
+* **Digests:** Create hashes and checksums of strings.
+* **Formatting:** Normalize a string using kCFStringNormalizationFormD.
+
 UICollectionView:
 ------------
 * **Changes:** Automatically animate changes in a data source. Automatically determine and animate changes (Supplied by the NSArray+Changes category) so that there is no longer a need to call reload data.
@@ -21,6 +53,10 @@ UICollectionView:
 NSArray *changes = [NSArray changesBetweenArray:currentDataSource andPreviousArray:previousDataSource];
 [collectionView performBatchChanges:changes inSection:someSection completion:nil]
 ```
+
+UIFont:
+----------
+* **List:** Create a list of all fonts that are available.
 
 UITableView:
 ------------
