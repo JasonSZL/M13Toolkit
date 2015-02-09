@@ -7,10 +7,11 @@
 //
 
 #import "NSObject+PropertyList.h"
+#import <objc/runtime.h>
 
 @implementation NSObject (PropertyList)
 
-+ (NSArray *)listOfPropertiesOfClass:(Class)class
++ (NSArray *)listOfPropertiesOfClass:(Class)aClass
 {
     //Get the propety list
     unsigned int propertyCount = 0;
@@ -27,12 +28,12 @@
     return [propertyNames copy];
 }
 
-+ (NSArray *)listOfPropertiesOfClass:(Class)class untilSuperclass:(Class)superclass
++ (NSArray *)listOfPropertiesOfClass:(Class)aClass untilSuperclass:(Class)superclass
 {
     //Get the class names in string form
     NSMutableArray * propertyNames = [NSMutableArray array];
     const char *untilClassName = class_getName(superclass);
-    Class currentClass = class;
+    Class currentClass = aClass;
     const char *currentClassName = class_getName(currentClass);
     
     //Add the properties moving up the tree untill we reach the super class
@@ -50,12 +51,12 @@
     //Create the dictionary to fill
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     //Get all the keys
-    NSArray *keys = [NSObject listOfPropertiesOfClass:[sourceObject class] untilSuperClass:[NSObject class]];
+    NSArray *keys = [NSObject listOfPropertiesOfClass:[self class] untilSuperclass:[NSObject class]];
     
     //Fill the dictionary
     for (NSString *key in keys) {
         //Want it in value form so that we can insert it into a dictionary.
-        id value = [sourceObject valueForKey:key];
+        id value = [self valueForKey:key];
         value = (value != nil) ? value : [NSNull null];
         [dict setObject:value forKey:key];
     }
@@ -65,7 +66,7 @@
 
 - (NSString *)fullDescription
 {
-    return [NSString stringWithFormat:@"<%@: %@> \nProperties: \n%@", NSStringFromClass([self class]), [NSString stringWithFormat:@"%p",self], [self dictionaryWithProperties]];
+    return [NSString stringWithFormat:@"<%@: %@> \nProperties: \n%@", NSStringFromClass([self class]), [NSString stringWithFormat:@"%p",self], [self dictionaryWithValuesOfProperties]];
 }
 
 @end

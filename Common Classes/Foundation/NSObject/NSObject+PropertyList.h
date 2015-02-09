@@ -17,7 +17,7 @@
  
  @return A list of the properties of the class in NSString form.
  */
-+ (NSArray *)listOfPropertiesOfClass:(Class)class;
++ (NSArray *)listOfPropertiesOfClass:(Class)aClass;
 
 /**
  Get the property list of the given class and superclasses up to the given superclass.
@@ -27,7 +27,7 @@
  
  @return A list of the properties of the class in NSString form.
  */
-+ (NSArray *)listOfPropertiesOfClass:(Class)class untilSuperclass:(Class)superclass;
++ (NSArray *)listOfPropertiesOfClass:(Class)aClass untilSuperclass:(Class)superclass;
 
 /**
  Get a NSDictionary object that contains the keys and values for the properties of the receiver.

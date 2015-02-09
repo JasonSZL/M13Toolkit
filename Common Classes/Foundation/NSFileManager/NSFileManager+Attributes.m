@@ -11,6 +11,7 @@
  */
 
 #import "NSFileManager+Attributes.h"
+#include <sys/xattr.h>
 
 @implementation NSFileManager (Attributes)
 

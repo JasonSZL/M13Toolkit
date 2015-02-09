@@ -14,6 +14,16 @@
 
 @implementation NSFileManager (Paths)
 
+- (NSString *)applicationSupportDirectory
+{
+    return [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) firstObject];
+}
+
+- (NSString *)applicationSupportDirectorySubpathByAppendingPath:(NSString *)subpath
+{
+    return [[self applicationSupportDirectory] stringByAppendingPathComponent:subpath];
+}
+
 - (NSString *)cachesDirectory
 {
     return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
