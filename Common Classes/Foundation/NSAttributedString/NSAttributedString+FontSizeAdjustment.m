@@ -41,10 +41,10 @@
              
 #if TARGET_OS_IPHONE
              UIFont *oldFont = (UIFont *)attribute;
-             UIFont *newFont = [oldFont fontWithSize:oldFont.pointSize + offsetPoints];
+             UIFont *newFont = [oldFont fontWithSize:oldFont.pointSize + offset];
 #else
              NSFont *oldFont = (NSFont *)attribute;
-             NSFont *newFont = [NSFont fontWithName:oldFont.fontName size:oldFont.pointSize + offsetPoints];
+             NSFont *newFont = [NSFont fontWithName:oldFont.fontName size:oldFont.pointSize + offset];
 #endif
              [self removeAttribute:NSFontAttributeName range:attributeRange];
              [self addAttribute:NSFontAttributeName value:newFont range:attributeRange];
