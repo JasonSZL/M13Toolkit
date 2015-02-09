@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "M13Toolkit"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "Some useful categories and classes."
 
   s.description  = <<-DESC
@@ -51,7 +51,7 @@ LICENSE
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/Marxon13/M13Toolkit.git", :tag => "v1.0.2" }
+  s.source       = { :git => "https://github.com/Marxon13/M13Toolkit.git", :tag => "v1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
