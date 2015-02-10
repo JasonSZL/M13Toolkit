@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "M13Toolkit"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Some useful categories and classes."
 
   s.description  = <<-DESC
@@ -51,7 +51,7 @@ LICENSE
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/Marxon13/M13Toolkit.git", :tag => "v1.0.3" }
+  s.source       = { :git => "https://github.com/Marxon13/M13Toolkit.git", :tag => "v1.0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -94,5 +94,50 @@ LICENSE
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+
+
+  # ――― Subspecs ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+    s.subspec "NSArray" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSArray/*.{h,m}"
+    end
+
+    s.subspec "NSAttributedString" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSAttributedString/*.{h,m}"
+    end
+
+    s.subspec "NSData" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSData/*.{h,m}"
+    end
+
+    s.subspec "NSDictionary" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSDictionary/*.{h,m}"
+    end
+
+    s.subspec "NSFileManager" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSFileManager/*.{h,m}"
+    end
+
+    s.subspec "NSLocale" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSLocale/*.{h,m}", "Common Classes/Foundation/NSString/NSString+Formatting.{h,m}"
+    end
+
+    s.subspec "NSObject" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSObject/*.{h,m}"
+    end
+
+    s.subspec "NSString" do |sp|
+        sp.source_files = "Common Classes/Foundation/NSString/*.{h,m}"
+    end
+
+    s.subspec "UIFont" do |sp|
+        sp.ios.source_files = "iOS Classes/UIKit/UIFont+List.{h,m}"
+        sp.osx.source_files = "OS X Classes/NSObject+CocoapodsFix.{h,m}"
+    end
+
+    s.subspec "UIKitBatchUpdates" do |sp|
+        sp.ios.source_files = "iOS Classes/UIKit/UICollectionView+AutoBatchUpdates.{h,m}", "iOS Classes/UIKit/UITableView+AutoBatchUpdates.{h,m}", "Common Classes/Foundation/NSArray/NSArray+Changes.{h,m}"
+        sp.osx.source_files = "OS X Classes/NSObject+CocoapodsFix.{h,m}"
+    end
 
 end

@@ -10,6 +10,8 @@
 		CA7DFE7E1A82BAD900E9B16A /* M13Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7DFE7D1A82BAD900E9B16A /* M13Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA7DFE841A82BAD900E9B16A /* M13Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7DFE781A82BAD900E9B16A /* M13Toolkit.framework */; };
 		CA7DFE8B1A82BAD900E9B16A /* M13ToolkitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7DFE8A1A82BAD900E9B16A /* M13ToolkitTests.m */; };
+		CA9F3D1B1A89AC0100D202D9 /* NSObject+CocoapodsFix.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9F3D191A89AC0100D202D9 /* NSObject+CocoapodsFix.h */; };
+		CA9F3D1C1A89AC0100D202D9 /* NSObject+CocoapodsFix.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9F3D1A1A89AC0100D202D9 /* NSObject+CocoapodsFix.m */; };
 		CAC34CAD1A83E1F500E213B8 /* Common Classes in Resources */ = {isa = PBXBuildFile; fileRef = CAC34CAC1A83E1F500E213B8 /* Common Classes */; };
 		CAC34CAE1A83E1FB00E213B8 /* Common Classes in Sources */ = {isa = PBXBuildFile; fileRef = CAC34CAC1A83E1F500E213B8 /* Common Classes */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		CA7DFE831A82BAD900E9B16A /* M13ToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M13ToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA7DFE891A82BAD900E9B16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA7DFE8A1A82BAD900E9B16A /* M13ToolkitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = M13ToolkitTests.m; sourceTree = "<group>"; };
+		CA9F3D191A89AC0100D202D9 /* NSObject+CocoapodsFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+CocoapodsFix.h"; path = "../../../OS X Classes/NSObject+CocoapodsFix.h"; sourceTree = "<group>"; };
+		CA9F3D1A1A89AC0100D202D9 /* NSObject+CocoapodsFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CocoapodsFix.m"; path = "../../../OS X Classes/NSObject+CocoapodsFix.m"; sourceTree = "<group>"; };
 		CAC34CAC1A83E1F500E213B8 /* Common Classes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Common Classes"; path = "../../Common Classes"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +81,8 @@
 			children = (
 				CA7DFE7D1A82BAD900E9B16A /* M13Toolkit.h */,
 				CA7DFE7B1A82BAD900E9B16A /* Supporting Files */,
+				CA9F3D191A89AC0100D202D9 /* NSObject+CocoapodsFix.h */,
+				CA9F3D1A1A89AC0100D202D9 /* NSObject+CocoapodsFix.m */,
 			);
 			path = M13Toolkit;
 			sourceTree = "<group>";
@@ -113,6 +119,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9F3D1B1A89AC0100D202D9 /* NSObject+CocoapodsFix.h in Headers */,
 				CA7DFE7E1A82BAD900E9B16A /* M13Toolkit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAC34CAE1A83E1FB00E213B8 /* Common Classes in Sources */,
+				CA9F3D1C1A89AC0100D202D9 /* NSObject+CocoapodsFix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
