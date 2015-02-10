@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "M13Toolkit"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "Some useful categories and classes."
 
   s.description  = <<-DESC
@@ -51,7 +51,7 @@ LICENSE
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source       = { :git => "https://github.com/Marxon13/M13Toolkit.git", :tag => "v1.0.4" }
+  s.source       = { :git => "https://github.com/Marxon13/M13Toolkit.git", :tag => "v1.0.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +80,7 @@ LICENSE
   #  the lib prefix of their name.
   #
 
-  s.frameworks = "CoreGraphics", "CommonCrypto", "Foundation"
+  s.frameworks = "Foundation"
   s.ios.framework = "UIKit"
   s.osx.framework = "AppKit"
 
@@ -100,14 +100,17 @@ LICENSE
 
     s.subspec "NSArray" do |sp|
         sp.source_files = "Common Classes/Foundation/NSArray/*.{h,m}"
+        sp.frameworks = "CoreGraphics"
     end
 
     s.subspec "NSAttributedString" do |sp|
         sp.source_files = "Common Classes/Foundation/NSAttributedString/*.{h,m}"
+        sp.frameworks = "CoreGraphics"
     end
 
     s.subspec "NSData" do |sp|
         sp.source_files = "Common Classes/Foundation/NSData/*.{h,m}"
+        sp.frameworks = "CommonCrypto"
     end
 
     s.subspec "NSDictionary" do |sp|
@@ -128,6 +131,7 @@ LICENSE
 
     s.subspec "NSString" do |sp|
         sp.source_files = "Common Classes/Foundation/NSString/*.{h,m}"
+        sp.frameworks = "CommonCrypto"
     end
 
     s.subspec "UIFont" do |sp|
